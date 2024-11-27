@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechQuiz - Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/topics">Topics</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <header class="hero-section">
+        <h1>Welcome to TechQuiz</h1>
+        <p>Your ultimate platform to test and enhance your technical skills.</p>
+    </header>
+
+    <!-- Quiz Selection Form -->
+    <section class="quiz-selection">
+        <form method="POST" class="quiz-select-form">
+            <h2>Select Your Quiz</h2>
+            <div class="quiz-select">
+                <div class="form-group">
+                    <label class="form-label">Category</label>
+                    <select id="category" class="form-control" name="category">
+                      <option value="any">Any Category</option>
+                      <option value='linux'>Linux</option>
+                      <option value='bash'>Bash</option>
+                      <option value='uncategorized'>Uncategorized</option>
+                      <option value='docker'>Docker</option>
+                      <option value='sql'>SQL</option>
+                      <option value='cms'>CMS</option>
+                      <option value='code'>Code</option>
+                      <option value='devops'>DevOps</option>
+                      <option value='react'>React</option>
+                      <option value='laravel'>Laravel</option>
+                      <option value='postgres'>Postgres</option>
+                      <option value='django'>Django</option>
+                      <option value='cpanel'>CPanel</option>
+                      <option value='nodejs'>NodeJs</option>
+                      <option value='wordpress'>WordPress</option>
+                      <option value='next-js'>Next.js</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Difficulty</label>
+                    <select class="form-control" name="difficulty">
+                        <option value="any">Any Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Number of Questions</label>
+                    <select class="form-control" name="limit">
+                        <option value="1">1</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+
+                <div class="form-group text-right">
+                    <button type="submit" class="btn btn-primary">Start Quiz</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Review Section -->
+    <section class="review-section">
+        <h2>What Our Users Are Saying</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>"TechQuiz has been a game changer for me. The quizzes are challenging and have helped me stay sharp!"</p>
+                <span>- Sarah, Developer</span>
+            </div>
+            <div class="review">
+                <p>"I love the variety of quizzes. They cover all aspects of tech, and I can always find a quiz that suits my level."</p>
+                <span>- John, Software Engineer</span>
+            </div>
+            <div class="review">
+                <p>"The quiz format is engaging, and the difficulty levels are perfect. It's a great way to learn and test my knowledge."</p>
+                <span>- Mark, Web Developer</span>
+            </div>
+        </div>
+
+        <!-- User Review Form -->
+        <h3>Give Us Your Feedback</h3>
+        <form class="review-form">
+            <div class="form-group">
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user-review">Your Review</label>
+                <textarea id="user-review" name="review" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">Submit Review</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 TechQuiz. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

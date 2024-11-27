@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics - TechQuiz</title>
+    <link rel="stylesheet" href="./css/topics.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/topics">Topics</a></li>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="page-header">
+        <h1>Explore the Latest in Technology</h1>
+        <p>Stay ahead with the latest advancements in tech. Dive into our blogs and start learning today!</p>
+        <div class="category-filter">
+            <label for="category">Choose a Topic:</label>
+            <select id="category" class="form-control" name="category">
+                <option value="any">Any Category</option>
+                <option value='linux'>Linux</option>
+                <option value='bash'>Bash</option>
+                <option value='docker'>Docker</option>
+                <option value='sql'>SQL</option>
+                <option value='cms'>CMS</option>
+                <option value='code'>Code</option>
+                <option value='devops'>DevOps</option>
+                <option value='react'>React</option>
+                <option value='laravel'>Laravel</option>
+                <option value='postgres'>Postgres</option>
+                <option value='django'>Django</option>
+                <option value='cpanel'>CPanel</option>
+                <option value='nodejs'>NodeJs</option>
+                <option value='wordpress'>WordPress</option>
+                <option value='next-js'>Next.js</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Blog Section -->
+    <section class="blog-container">
+        <!-- Blog Card Example -->
+        <div class="blog-card" data-category="react">
+            <div class="blog-card-img" style="background-image: url('./images/react.jpg');"></div>
+            <div class="blog-card-body">
+                <h2>Revolutionizing Web Development with React</h2>
+                <p>Discover how React's component-based architecture is changing the way we build modern, dynamic web applications.</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Add more blog cards below -->
+        <div class="blog-card" data-category="docker">
+            <div class="blog-card-img" style="background-image: url('./images/docker.jpg');"></div>
+            <div class="blog-card-body">
+                <h2>Docker: Containerizing the Future</h2>
+                <p>Learn how Docker is simplifying the deployment of applications and improving DevOps workflows with containers.</p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <!-- Additional Blog Cards go here -->
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 TechQuiz. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/topics.js"></script>
+</body>
+</html>

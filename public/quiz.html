@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/quiz.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/topics">Topics</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="warningMessage" style="display:none; color: red;">
+        Warning: You have exited fullscreen mode!
+    </div>
+    
+    <main>
+        <button id="fullscreenBtn">Start Test</button>
+        <div id="container">
+            
+            <div id="upper-container">
+                <div id="timer">
+                    Time Left:
+                    <p id="time-left">00:10:00</p>
+                </div>
+                <button disabled id="exitfullscreenBtn">Exit Test</button>
+            </div>
+            <div id="question">
+                
+            </div>
+            <div id="options">
+                
+                <label><input name="option A" type="checkbox"/><p class="ans_choice"></p></label>
+                <label><input name="option B" type="checkbox"/><p class="ans_choice"></p></label>
+                <label><input name="option C" type="checkbox"/><p class="ans_choice"></p></label>
+                <label><input name="option D" type="checkbox"/><p class="ans_choice"></p></label>
+                <label><input name="option D" type="checkbox"/><p class="ans_choice"></p></label>
+                <label><input name="option D" type="checkbox"/><p class="ans_choice"></p></label>
+                
+                
+            </div>
+            <div id="save-next">
+                <button disabled id="saveBtn">Save & Next</button>
+              <button disabled id="submitBtn">Submit</button>
+            </div>
+            <div id="score-details">
+                Score : <p id="score"></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/quiz.js"></script>
+</body>
+</html>
