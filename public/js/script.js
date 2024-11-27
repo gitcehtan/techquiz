@@ -69,7 +69,7 @@ reviewForm.addEventListener("submit", async(e) => {
     userName : userName.value,
     userReview: userReview.value
   }
-  const response = await fetch("http://localhost:3000/submit-review",{
+  const response = await fetch("https://techquiz-i5sx.onrender.com/submit-review",{
     method: "POST",
     headers: {
       "Content-Type": "application/json"
