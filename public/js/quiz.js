@@ -208,7 +208,7 @@ boxCheckColor_Check_State();
 
 async function getQuestions(){
  
-    const response = await fetch("http://localhost:3000/get-questions");
+    const response = await fetch("https://techquiz-i5sx.onrender.com/get-questions");
     const questions = await response.json();
     
     

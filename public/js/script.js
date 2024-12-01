@@ -26,7 +26,7 @@ quizSelection.addEventListener("submit", async(e)=>{
       limit : limit.value
     }
 
-    let url = "http://localhost:3000/select-quiz"
+    let url = "https://techquiz-i5sx.onrender.com/select-quiz"
     try {
       const response = await fetch(url, {
         method: "POST",
@@ -42,7 +42,7 @@ quizSelection.addEventListener("submit", async(e)=>{
     
       const responseData = await response.json();
       console.log(responseData);
-      window.location.href ="http://localhost:3000/quiz";
+      window.location.href ="https://techquiz-i5sx.onrender.com/quiz";
     
     } catch (error) {
       console.error("Fetch error:", error.message);
